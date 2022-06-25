@@ -19,7 +19,7 @@ img {
 
 .link {
     text-decoration: none;
-    color: currentColor;
+    /*color: currentColor;*/
     transition: background-color var(--fast-anim) var(--timing-function),
     color var(--fast-anim) var(--timing-function);
 }
