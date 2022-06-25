@@ -1,0 +1,37 @@
+/* Clients icons */
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid var(--icons-cl);
+    border-radius: 4px;
+    transition: border-color var(--fast-anim) var(--timing-function);
+
+    fill: var(--icons-cl);
+    transition: fill var(--fast-anim) var(--timing-function);
+
+   @include mq (desktop) {
+    width: 170px;
+}
+
+&:hover {
+    border: solid 1px var(--accent-cl);
+    fill: var(--accent-cl);
+}
+
+&:focus {
+    border: solid 1px var(--accent-cl);
+    fill: var(--accent-cl);
+}
+
+&:current {
+    border: solid 1px var(--accent-cl);
+    fill: var(--accent-cl);
+}
+
+}
+
+

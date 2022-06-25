@@ -1,0 +1,133 @@
+/*Header contacts*/
+
+.contacts {
+    margin-left: auto;
+
+    @include mq (tablet-only) {
+        display: flex;
+        align-items: center;
+    }
+        
+    @include mq (mobile-only) {
+        display: none;
+    }
+}
+
+.contacts__list {
+   
+    @include mq (desktop) {
+    display: flex;
+    align-items: center;
+
+    }
+}    
+
+.contacts__item {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+@include mq (desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:first-child {
+        margin-right: 50px;
+    }
+}
+
+@include mq (tablet-only) {
+         display: flex;
+         align-items: center;
+         margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0px;
+             }
+         }
+}
+
+.contacts__link {
+    display: flex;
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+
+    &:current {
+        color: var(--accent-cl);
+    }
+
+@include mq (desktop) {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/*Footer*/
+
+.adress {
+
+@include mq (tablet-only) {
+
+    margin-bottom: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: 165px;
+    text-align: center;
+}
+
+@include mq (mobile-only) {
+    margin-bottom: 60px;
+
+}
+}
+
+.adress__list {
+    margin-top: 20px;
+}
+
+.adress__item {
+
+    margin-bottom: 8px;
+    color: var(--transparent-cl);
+
+    @include mq (desktop) {
+        margin-bottom: 9px;
+    }
+}
+
+.adress__item--text {
+    color: var(--main-bg-cl);
+    transition: color var(--fast-anim) 
+    var(--timing-function);
+
+    @include mq (desktop) {
+    margin-bottom: 9px;
+    }
+}
+
+@include mq (not-desktop){
+
+.adress__item:last-child {
+    margin-bottom: 0;
+}
+}
+
+.footer .adress__item:hover,
+.footer .adress__item:focus {
+    color: var(--accent-cl);
+}
+
+.adress__item--text:hover,
+.adress__item--text:focus {
+    color: var(--accent-cl);
+}

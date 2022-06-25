@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <!--Projects fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--Normalize-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom styles-->
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <!--Шапка сайту-->
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html" lang="en">
+                <span class="header__logo--accent">Web</span>Studio</a>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+
+            </button>
+
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a class="link navigation__link " href="./index.html">Студия</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="link navigation__link current" href="#">Портфолио</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="link navigation__link" href="#">Контакты</a>
+                </li>
+            </ul>
+
+            <div class="contacts">
+                <ul class="contacts__list list ">
+                    <li class="contacts__item">
+                        <a class="contacts__link link current" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="tel:+380961111111">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="works section">
+            <div class="container">
+                <h1 class="visually-hidden">Наши работы</h1>
+                <ul class="filter">
+                    <li class="filter__item"><button class="filter__btn btn" type="button">Все</button></li>
+                    <li class="filter__item"><button class="filter__btn btn" type="button">Веб-сайты</button></li>
+                    <li class="filter__item"><button class="filter__btn btn">Приложения</button></li>
+                    <li class="filter__item"><button class="filter__btn btn">Дизайн</button></li>
+                    <li class="filter__item"><button class="filter__btn btn">Маркетинг</button></li>
+                </ul>
+
+                <h2 class="visually-hidden">Примеры работ</h2>
+                <ul class="grid project__list list">
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/projects/project-1_lg.webp    1x,
+                                        ./images/projects/project-1_lg@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/projects/project-1_lg.jpg    1x,
+                                        ./images/projects/project-1_lg@2x.jpg 2x
+                                      " type="image/jpg">
+
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/projects/project-1_md.webp    1x,
+                                        ./images/projects/project-1_md@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/projects/project-1_md.jpg    1x,
+                                        ./images/projects/project-1_md@2x.jpg 2x
+                                      " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/projects/project-1_sm.webp    1x,
+                                        ./images/projects/project-1_sm@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/projects/project-1_sm.jpg    1x,
+                                        ./images/projects/project-1_sm@2x.jpg 2x
+                                      " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-1_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Технокряк</h3>
+                                <p class="card__text" lang="en">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                        ./images/projects/project-2_lg.webp    1x,
+                                                        ./images/projects/project-2_lg@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                        ./images/projects/project-2_lg.jpg    1x,
+                                                        ./images/projects/project-2_lg@2x.jpg 2x
+                                                      " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                        ./images/projects/project-2_md.webp    1x,
+                                                        ./images/projects/project-2_md@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                        ./images/projects/project-2_md.jpg    1x,
+                                                        ./images/projects/project-2_md@2x.jpg 2x
+                                                      " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/projects/project-2_sm.webp    1x,
+                                                        ./images/projects/project-2_sm@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/projects/project-2_sm.jpg    1x,
+                                                        ./images/projects/project-2_sm@2x.jpg 2x
+                                                      " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-2_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                <p class="card__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-3_lg.webp    1x,
+                                                            ./images/projects/project-3_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-3_lg.jpg    1x,
+                                                            ./images/projects/project-3_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-3_md.webp    1x,
+                                                            ./images/projects/project-3_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-3_md.jpg    1x,
+                                                            ./images/projects/project-3_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-3_sm.webp    1x,
+                                                            ./images/projects/project-3_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-3_sm.jpg    1x,
+                                                            ./images/projects/project-3_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-3_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Ресторан <span lang="en">Seafood</span></h3>
+                                <p class="card__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-4_lg.webp    1x,
+                                                            ./images/projects/project-4_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-4_lg.jpg    1x,
+                                                            ./images/projects/project-4_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-4_md.webp    1x,
+                                                            ./images/projects/project-4_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-4_md.jpg    1x,
+                                                            ./images/projects/project-4_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-4_sm.webp    1x,
+                                                            ./images/projects/project-4_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-4_sm.jpg    1x,
+                                                            ./images/projects/project-4_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-4_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Проект <span lang="en">Prime</span></h3>
+                                <p class="card__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-5_lg.webp    1x,
+                                                            ./images/projects/project-5_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-5_lg.jpg    1x,
+                                                            ./images/projects/project-5_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-5_md.webp    1x,
+                                                            ./images/projects/project-5_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-5_md.jpg    1x,
+                                                            ./images/projects/project-5_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-5_sm.webp    1x,
+                                                            ./images/projects/project-5_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-5_sm.jpg    1x,
+                                                            ./images/projects/project-5_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-5_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Проект <span lang="en">Boxes</span></h3>
+                                <p class="card__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-6_lg.webp    1x,
+                                                            ./images/projects/project-6_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-6_lg.jpg    1x,
+                                                            ./images/projects/project-6_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-6_md.webp    1x,
+                                                            ./images/projects/project-6_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-6_md.jpg    1x,
+                                                            ./images/projects/project-6_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-6_sm.webp    1x,
+                                                            ./images/projects/project-6_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-6_sm.jpg    1x,
+                                                            ./images/projects/project-6_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-6_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title" lang="en">Inspiration has no Borders</h3>
+                                <p class="card__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-7_lg.webp    1x,
+                                                            ./images/projects/project-7_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-7_lg.jpg    1x,
+                                                            ./images/projects/project-7_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-7_md.webp    1x,
+                                                            ./images/projects/project-7_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-7_md.jpg    1x,
+                                                            ./images/projects/project-7_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-7_sm.webp    1x,
+                                                            ./images/projects/project-7_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-7_sm.jpg    1x,
+                                                            ./images/projects/project-7_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-7_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Издание <span lang="en">Limited Edition</span></h3>
+                                <p class="card__text" lang="en">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-8_lg.webp    1x,
+                                                            ./images/projects/project-8_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-8_lg.jpg    1x,
+                                                            ./images/projects/project-8_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-8_md.webp    1x,
+                                                            ./images/projects/project-8_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-8_md.jpg    1x,
+                                                            ./images/projects/project-8_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-8_sm.webp    1x,
+                                                            ./images/projects/project-8_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-8_sm.jpg    1x,
+                                                            ./images/projects/project-8_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-8_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title">Проект <span lang="en">LAB</span></h3>
+                                <p class="card__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link">
+                            <div class="project__thumb">
+                                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-9_lg.webp    1x,
+                                                            ./images/projects/project-9_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-9_lg.jpg    1x,
+                                                            ./images/projects/project-9_lg@2x.jpg 2x
+                                                          " type="image/jpg">
+
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-9_md.webp    1x,
+                                                            ./images/projects/project-9_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-9_md.jpg    1x,
+                                                            ./images/projects/project-9_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-9_sm.webp    1x,
+                                                            ./images/projects/project-9_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-9_sm.jpg    1x,
+                                                            ./images/projects/project-9_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-9_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
+                                <div class="project__overlay">
+                                    <div class="project__text">
+                                        <p>Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения
+                                            о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card__title" lang="en">Growing Business</h3>
+                                <p class="card__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--Мобільне меню*-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-close" href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-nav__list list">
+            <li class="mobil-nav__item">
+                <a class="link mobil-nav__link current" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="link mobil-nav__link" href="#">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="link mobil-nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+        <ul class="contacts__list list ">
+
+            <li class="contacts__item">
+                <a class="link contacts__link--tel" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+
+            <li class="contacts__item">
+                <a class="link contacts__link--mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+
+        </ul>
+        <ul class="mobile-menu__socials list">
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Instagram </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Twitter</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Facebook</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Подвал-->
+
+    <footer class="footer">
+        <div class="footer__container container">
+
+
+            <div class="adress">
+                <a class="footer__logo logo" href="./index.html" lang="en">
+                    <span class="footer__logo--accent">Web</span>Studio</a>
+                <ul class="adress__list list">
+                    <li class="adress__item">
+                        <p class="adress__item--text">
+                            г. Киев, пр-т Леси Украинки, 26</p>
+                    </li>
+                    <li class="adress__item">
+                        <a class="link" href="mailto:info@example.com">
+                            info@example.com</a>
+                    </li>
+                    <li class="adress__item">
+                        <a class="link" href="tel:+380961111111 ">+38 096 111 11 11</a>
+                </ul>
+            </div>
+
+            <!--Social-box-->
+
+            <div class="social-box">
+                <h3 class="social-box__title">Присоединяйтесь</h3>
+                <ul class="socials list">
+                    <li class="socials__item">
+                        <a class="socials__link social-box__link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="иконка Instagram">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link social-box__link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="иконка Twitter">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link social-box__link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="иконка Facebook">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link social-box__link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="иконка Linkedin">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Подписка на рассылку-->
+
+            <div class="subscribe">
+                <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+                <form class="subscribe-form" name="subscribe-form">
+                    <input class="subscribe-form__input" type="email" name="mail" id="mail" placeholder="E-mail">
+                    <button class="subscribe-form__btn btn" type="submit"><span>Подписаться</span>
+                        <svg class="subscribe-form__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+</body>
+
+</html>

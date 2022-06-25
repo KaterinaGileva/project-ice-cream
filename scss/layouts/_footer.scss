@@ -1,0 +1,44 @@
+/*
+============================
+| Footer section
+============================
+*/
+
+.footer {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-bg-cl);
+    color: var(--accent-txt-cl);
+
+    @include mq (mobile-only) {
+
+        text-align: center;
+    }
+
+    @include mq (tablet-only) {
+
+.subscribe {
+
+    text-align: center; 
+   }
+   }
+ 
+.footer__container {
+
+    @include mq (desktop) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+     
+    @include mq (tablet-only) {
+        display: flex;   
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    }
+}
+
+

@@ -1,0 +1,43 @@
+/*logo*/
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--logo-cl);
+
+@include mq(desktop) {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+     }
+}
+
+.header__logo {
+    
+@include mq(tablet-only) {
+        margin-right: 88px;
+    }
+
+@include mq(desktop) {
+        margin-right: 93px;
+    }
+    
+&--accent {
+        color: var(--accent-cl);
+    }
+}
+
+.footer__logo {
+
+    display: block;
+    margin-bottom: 20px;
+    
+    color: var(--accent-txt-cl);
+}
+
+.footer__logo--accent {
+    color: var(--accent-cl)
+}

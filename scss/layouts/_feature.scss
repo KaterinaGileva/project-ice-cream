@@ -1,0 +1,33 @@
+/*
+============================
+| Feature section
+============================
+*/
+
+.feature__picture {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+   
+    background-color: var(--secondary-bg-cl);
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-txt-cl);
+ 
+@include mq(mobile-only) {
+    text-align: center;
+}
+}
+
+.feature p {
+    text-align: left;
+}

@@ -1,0 +1,41 @@
+/* Сітка для колекції з елементів */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+    }
+
+.grid-item {
+   
+@include mq (mobile-only) {
+    --items: 1;
+    }
+@include mq (tablet-only) {
+    --items: 2;
+}
+
+flex-basis: calc((100% - var(--card-set-gap) * 
+(var(--items) - 1))/ var(--items));
+
+}
+
+.clients__item {
+
+    @include mq (mobile-only) {
+        --items: 2;
+    }
+      
+    @include mq (tablet-only) {
+        --items: 3;
+    }
+
+    @include mq (desktop) {
+        --items: 6;   
+    }
+
+flex-basis: calc((100% - var(--card-set-gap) 
+* (var(--items) - 1))/ var(--items));
+
+}
+
