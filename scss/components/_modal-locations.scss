@@ -167,7 +167,7 @@ max-width: 450px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
-    
+
     color: #FFA5BA;
 }
 
@@ -183,7 +183,7 @@ max-width: 450px;
 }
 
 .locations__contact {
-    /*position: absolute;*/
+    position: absolute;
     top: 0;
     /*padding: 63px 24px;*/
     width: 100%;
@@ -197,7 +197,7 @@ max-width: 450px;
     color: #907E82;
 }
 
-.map {
+.locations__map {
     position: absolute;
     bottom: 0;  
     width: 100%;
